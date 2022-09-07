@@ -8,7 +8,7 @@ body{
     font-size: 18px;
     line-height: 25px;
     font-family: "Open Sans";
-    color: $primary-clr
+    color: $primary-clr-1;
 }
 
 .container{
@@ -21,6 +21,7 @@ body{
 button{
     background-color: transparent;
     border: none;
+    color: #FFFFFF;
 }
 
 .btn {
