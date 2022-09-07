@@ -91,6 +91,7 @@
     }
 }
 .collection{
+    margin-top: 56px;
     &__inner{
         display: flex;
         flex-direction: column;
@@ -128,9 +129,72 @@
         border: none;
     }
     &__image{
-
         & img{
             margin-right: -200px;
         }
+    }
+}
+
+.rarity{
+    background: url('../images/bg-wave.svg') no-repeat;
+    height: 367px;
+    &__inner{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        height: 367px;
+    }
+    &__subtitle{
+        position: relative;
+        z-index: 1;
+    }
+    &__cards{
+        background-color: #FBF1E6;
+        padding-top: 68px;
+    }
+    &__card{
+        display: flex;
+        justify-content: space-between;
+        padding-top: 75px;
+        padding-bottom: 75px;
+        position: relative;
+        &-info{
+        }
+        &-title{
+            font-size: 36px;
+            line-height: 32px;
+            margin-bottom: 30px;
+        }
+        &-tier{
+            line-height: 16px;
+            margin-bottom: 30px;
+            position: relative;
+        }
+        &-tier::before{
+            content: url('../images/rating-active.svg');
+            position: absolute;
+            left: 80px;
+        }
+        &-tier::after{
+            content: url('../images/rating-inactive.svg');
+            position: absolute;
+            left: 105px;
+        }
+        &-text{
+            @extend %primary-text-1;
+            max-width: 336px;
+            width: 100%;
+        }
+        &-image img{
+            width: 100%;
+        }
+    }
+    &__card::after{
+        content: '';
+        position: absolute;
+        width: 200%;
+        top: 0;
+        left: 0;
+        border-top: 1px solid rgba(64, 71, 86, 0.6);
     }
 }
