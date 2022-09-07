@@ -1,6 +1,37 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 25px;
+    font-family: "Open Sans";
+    color: $primary-clr
+}
+
 .container{
     max-width: 940px;
     width: 100%;
     padding: 0 20px;
     margin: 0 auto;
+}
+
+button{
+    background-color: transparent;
+    border: none;
+}
+
+.btn {
+    background: #F7859C;
+    border-radius: 12px;
+    width: 135px;
+    height: 45px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 25px;
+    color: #FFFFFF;
+    cursor: pointer;
+    padding-bottom: 3px;
 }
