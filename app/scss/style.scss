@@ -137,7 +137,6 @@
 
 .rarity{
     background: url('../images/bg-wave.svg') no-repeat;
-    height: 367px;
     &__inner{
         display: flex;
         flex-direction: column;
@@ -205,5 +204,15 @@
         margin-top: -300px;
         transform: rotate(180deg);
         z-index: -1;
+    }
+}
+
+.roadmap{
+
+    &__inner{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        height: 367px;
     }
 }
