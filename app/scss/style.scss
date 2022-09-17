@@ -208,7 +208,7 @@
 }
 
 .roadmap{
-
+    margin-bottom: 100px;
     &__inner{
         display: flex;
         flex-direction: column;
@@ -305,4 +305,66 @@
         width: 33px;
         height: 36px;
     }
+}
+
+.team{
+    padding-top: 139px;
+    margin-bottom: 60px;
+    position: relative;
+    background-color: #FDDBE2;
+    &__inner{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        height: 100px;
+        align-items: center;
+        margin-bottom: 48px;
+    }
+    &__subtitle{
+        position: relative;
+        z-index: 1;
+    }
+    &__title{
+        
+    }
+    &__items{
+        max-width: 980px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        flex-flow: wrap;
+    }
+    &__item{
+        text-align: center;
+        margin-bottom: 70px;
+    }
+    &__image{
+        margin-bottom: 25px;
+    }
+    &__prof{
+
+    }
+    &__name{
+        font-size: 36px;
+        line-height: 32px;
+    }
+}
+.team::before{
+    content: '';
+    background: url('../images/team-bg.png');
+    position: absolute;
+    top: -193px;
+    left: -1150px;
+    width: 400%;
+    height: 194px;
+}
+.team::after{
+    content: '';
+    background: url('../images/team-bg.png');
+    transform: rotate(180deg);
+    position: absolute;
+    left: -1376px;
+    width: 400%;
+    height: 225px;
+    bottom: -225px;
 }
