@@ -240,14 +240,41 @@
             grid-template-columns: 160px 530px 180px;
         }
     }
-    &__item:first-child::before{
+    &__item_first::before{
         content: '';
-        background-image: url('../images/roadmap-before-bg.png');
+        background: url('../images/roadmap-before-bg.png') no-repeat;
         position: absolute;
-        top: 3px;
-        right: 4px;
-        width: 400px;
-        height: 200px;
+        top: 0;
+        right: -107px;
+        width: 193px;
+        height: 143px;
+    }
+    &__item_second::before{
+        content: '';
+        background: url('../images/roadmap-peaple.svg') no-repeat;
+        position: absolute;
+        top: 0;
+        right: -275px;
+        width: 185px;
+        height: 423px;
+    }
+    &__item_fourth::before{
+        content: '';
+        background: url('../images/roadmap-peaple2.svg') no-repeat;
+        position: absolute;
+        top: 55px;
+        right: -320px;
+        width: 289px;
+        height: 436px;
+    }
+    &__item_sixth::before{
+        content: '';
+        background: url('../images/roadmap-peaple3.svg') no-repeat;
+        position: absolute;
+        top: 10px;
+        right: -315px;
+        width: 291px;
+        height: 425px;
     }
     &__question{
         line-height: 16px;
